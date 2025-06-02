@@ -2,6 +2,8 @@
 
 A Laravel-based web application for booking train tickets, managing passenger details, and tracking train routes in Bangladesh. Developed by Group A as an academic project to enhance railway travel with a user-friendly, technology-driven platform.
 
+**Project Repository:** [https://github.com/Rahexa/bangladesh-railway-system](https://github.com/Rahexa/bangladesh-railway-system)
+
 ---
 
 ## Table of Contents
@@ -11,9 +13,6 @@ A Laravel-based web application for booking train tickets, managing passenger de
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Team](#team)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -52,7 +51,7 @@ Follow these steps to set up the Bangladesh Railway System locally:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/bangladesh-railway-system.git
+    git clone https://github.com/Rahexa/bangladesh-railway-system.git
     cd bangladesh-railway-system
     ```
 
@@ -119,6 +118,4 @@ Follow these steps to set up the Bangladesh Railway System locally:
 - **Track Trains:** Monitor real-time train status on the tracking page.
 - **Admin Panel:** Admins can manage users, bookings, and schedules via the admin dashboard.
 - **Download Tickets:** View and download tickets in PDF format from the "My Booking" section.
-
----
 
