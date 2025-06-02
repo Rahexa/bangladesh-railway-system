@@ -1,0 +1,256 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #151B4F;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+/* Form Styling */
+form {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border: 2px solid #151B4F;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    max-width: 500px;
+    will-change: transform;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #151B4F;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form select {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #151B4F;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+form input:focus,
+form select:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.3);
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background: #151B4F;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Flexbox for fields in one line */
+.flex-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.flex-container > div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.flex-container > div:last-child {
+    margin-right: 0;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #151B4F;
+}
+
+/* Popup Header */
+.popup h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #151B4F;
+    font-weight: 600;
+}
+
+/* Popup Text */
+.popup p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Close Button */
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Seat Availability Styles */
+.seat-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.train-card {
+    border: none;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    background: #f3f4f6;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.seat-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #10b981;
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.availability-badge {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, #e7f2ff, #d6e6ff);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.available {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(139, 195, 74, 0.5);
+    transition: height 0.8s ease-in-out;
+}
+
+.availability-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.8rem;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.seat-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-top: 1rem;
+}
+
+.fare {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.book-btn {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+}
+
+.book-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
