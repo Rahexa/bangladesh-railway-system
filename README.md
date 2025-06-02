@@ -122,19 +122,3 @@ Follow these steps to set up the Bangladesh Railway System locally:
 
 ---
 
-## Team
-
-*List your team members here*
-
----
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit pull requests.
-
----
-
-## License
-
-*Specify the license under which your project is released.*
-
